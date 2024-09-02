@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,51 @@
     <meta name="description" content="Projeto para testes">
     <meta name="author" content="Beatriz Chagas">
     <meta name="roots" content="index, all">
-    
+
     <title>Website design</title>
     <link rel="shortcut icon" href="img/IconTeste.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#">Coffee<span>.</span></a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="content">
+            <h2>Comece o seu dia com café fresco</h2>
+            <p>
+                O café é uma bebida popular e adorada por pessoas ao redor do mundo. Desperte seus sentidos com uma
+                xícara fumegante de motivação líquida.
+            </p>
+            <button>Peça agora</button>
+        </div>
+    </section>
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
 </body>
 <footer>
-    <a target="_blank" href="https://icons8.com/icon/48258/test-passed">Teste passado</a> ícone por <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/48258/test-passed">Teste passado</a> ícone por <a target="_blank"
+        href="https://icons8.com">Icons8</a>
 </footer>
+
 </html>
