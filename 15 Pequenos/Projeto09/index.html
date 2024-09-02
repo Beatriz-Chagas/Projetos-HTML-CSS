@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,59 @@
     <meta name="description" content="Projeto para testes">
     <meta name="author" content="Beatriz Chagas">
     <meta name="roots" content="index, all">
-    
+
     <title>Website design</title>
     <link rel="shortcut icon" href="img/IconTeste.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-    
+    <div class="login_form">
+        <!-- Login form container -->
+        <form action="#">
+          <h3>Log in with</h3>
+          <div class="login_option">
+            <!-- Google button -->
+            <div class="option">
+              <a href="#">
+                <img src="img/google.png" alt="Google" />
+                <span>Google</span>
+              </a>
+            </div>
+            <!-- Apple button -->
+            <div class="option">
+              <a href="#">
+                <img src="img/apple.png" alt="Apple" />
+                <span>Apple</span>
+              </a>
+            </div>
+          </div>
+          <!-- Separador de opção de login -->
+          <p class="separator">
+            <span>ou</span>
+          </p>
+          <!-- Caixa de input de email -->
+          <div class="input_box">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Insira o seu e-mail" required />
+          </div>
+          <!-- Caixa de input de senha -->
+          <div class="input_box">
+            <div class="password_title">
+              <label for="password">Senha</label>
+              <a href="#">Esqueceu a senha?</a>
+            </div>
+            <input type="password" id="password" placeholder="Isira sua senha" required />
+          </div>
+           <!-- Botão de login -->
+          <button type="submit">Entrar</button>
+          <p class="sign_up">Não tem uma conta ainda? <a href="#">Cadastre-se</a></p>
+        </form>
 </body>
 <footer>
-    <a target="_blank" href="https://icons8.com/icon/48258/test-passed">Teste passado</a> ícone por <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/48258/test-passed">Teste passado</a> ícone por <a target="_blank"
+        href="https://icons8.com">Icons8</a>
 </footer>
+
 </html>
