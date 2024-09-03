@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,270 @@
     <meta name="description" content="Projeto para testes">
     <meta name="author" content="Beatriz Chagas">
     <meta name="roots" content="index, all">
-    
+
     <title>Website design</title>
     <link rel="shortcut icon" href="../Projeto01/img/IconTeste.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
 </head>
+
 <body>
-    
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Coffee</h2>
+            </a>
+            <ul class="nav-menu">
+                <i id="close-menu-button" class="fa-solid fa-xmark"></i>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#testimonial" class="nav-link">Depoimento</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Galeria</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contate-nos</a></li>
+            </ul>
+            <i id="open-menu-button" class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+
+
+    <section class="hero-section">
+        <div class="section-container">
+            <div class="hero-container">
+                <div class="hero-details">
+                    <h2 class="hero-title">Melhor Café</h2>
+                    <h3 class="hero-subtitle">Deixe seu dia ainda melhor com nosso café especial!</h3>
+                    <p class="hero-description">Bem-vindo ao nosso paraíso do café, onde cada grão conta uma história e
+                        cada xícara desperta alegria.</p>
+                    <div class="hero-buttons">
+                        <button class="button order-now-button">Peça já</button>
+                        <button class="button contact-us-button">Contate-nos</button>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="img/coffee-hero-section.png" alt="Café" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us" id="about">
+        <div class="section-container">
+            <div class="about-container">
+                <div class="about-image-wrapper"></div>
+                <div class="about-text-wrapper">
+                    <h2 class="section-title">Sobre nós</h2>
+                    <p class="about-description">
+                        Nós da Coffee House, localizada em Berndorf, Alemanha, somos um dos lugares favoritos para tomar
+                        café e conversar. Nosso objetivo é oferecer a melhor experiência aos nossos hóspedes, garantindo
+                        uma experiência autêntica de beber café em um ambiente acolhedor, amigável e relaxado. Nosso
+                        objetivo é trazer uma sensação de relaxamento para a cidade com nosso espaço aconchegante,
+                        completo com sofás confortáveis ​​para relaxar enquanto você aprecia seu café.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <h2 class="section-title">Nosso Menu</h2>
+        <div class="section-container">
+            <div class="menu-container">
+                <div class="menu-items">
+                    <img src="img/hot-beverages.png" alt="Bebidas quentes" class="menu-image">
+                    <div class="menu-text">
+                        <h3 class="menu-heading">Bebidas quentes</h3>
+                        <p class="menu-description">Ampla variedade de café fumegante para deixá-lo fresco e leve.</p>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <img src="img/cold beverages.png" alt="Bebidas Geladas" class="menu-image">
+                    <div class="menu-text">
+                        <h3 class="menu-heading">Bebidas Geladas</h3>
+                        <p class="menu-description">Café gelado cremoso e espumoso para refrescar você.</p>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <img src="img/refreshment.png" alt="Refrescos" class="menu-image">
+                    <div class="menu-text">
+                        <h3 class="menu-heading">Refresco</h3>
+                        <p class="menu-description">Bebida refrescante de frutas e gelo para se sentir revigorado.</p>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <img src="img/special-combo.png" alt="Combos Especiais" class="menu-image">
+                    <div class="menu-text">
+                        <h3 class="menu-heading">Combos Especiais</h3>
+                        <p class="menu-description">Suas combinações favoritas de comida e bebida</p>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <img src="img/desserts.png" alt="Sobremesa" class="menu-image">
+                    <div class="menu-text">
+                        <h3 class="menu-heading">Sobremesa</h3>
+                        <p class="menu-description">Sacie seu paladar e leve-o a uma experiência culinária deliciosa.
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <img src="img/burger-frenchfries.png" alt="hanburguer e batatas" class="menu-image">
+                    <div class="menu-text">
+                        <h3 class="menu-heading">Hanbúrguer e batatas</h3>
+                        <p class="menu-description">Lanches rápidos para satisfazer sua fome de tamanho pequeno.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+        <h2 class="section-title">Depoimento</h2>
+        <div class="section-container">
+            <div class="testimonial-container swiper">
+                <div class="slide-wrapper">
+                    <div class="card-list swiper-wrapper">
+                        <div class="card-item swiper-slide">
+                            <img src="img/user-1.jpg" alt="Usuario" class="user-image">
+                            <h3 class="user-name">Sarah Johnson</h3>
+                            <p class="user-thoughts">"Adorei o assado francês. Perfeitamente equilibrado e rico. Pedirei
+                                novamente!"</p>
+                        </div>
+                        <div class="card-item swiper-slide">
+                            <img src="img/user-2.jpg" alt="Usuario" class="user-image">
+                            <h3 class="user-name">James Wilson</h3>
+                            <p class="user-thoughts">"Excelente mistura de espresso! Sabor suave e ousado. Entrega
+                                rápida também!"</p>
+                        </div>
+                        <div class="card-item swiper-slide">
+                            <img src="img/user-3.jpg" alt="Usuario" class="user-image">
+                            <h3 class="user-name">Michael Brown</h3>
+                            <p class="user-thoughts">"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"</p>
+                        </div>
+                        <div class="card-item swiper-slide">
+                            <img src="img/user-4.jpg" alt="Usuario" class="user-image">
+                            <h3 class="user-name">Emily Harris</h3>
+                            <p class="user-thoughts">"Excellent quality! Fresh beans and quick delivery. Highly
+                                recommend."</p>
+                        </div>
+                        <div class="card-item swiper-slide">
+                            <img src="img/user-5.jpg" alt="Usuario" class="user-image">
+                            <h3 class="user-name">Anthony Thompson</h3>
+                            <p class="user-thoughts">"O melhor descafeinado que já experimentei! Suave e saboroso.
+                                Chegou prontamente."</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slider-btn swiper-button-prev"></div>
+                    <div class="swiper-slider-btn swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2 class="section-title">Galeria</h2>
+        <div class="section-container">
+            <div class="gallery-list">
+                <div class="gallery-items">
+                    <img src="img/gallery-1.png" alt="Imagem de uma galeria" class="gallery-image">
+                </div>
+                <div class="gallery-items">
+                    <img src="img/gallery-2.png" alt="Imagem de uma galeria">
+                </div>
+                <div class="gallery-items">
+                    <img src="img/gallery-3.png" alt="Imagem de uma galeria">
+                </div>
+                <div class="gallery-items">
+                    <img src="img/gallery-4.png" alt="Imagem de uma galeria">
+                </div>
+                <div class="gallery-items">
+                    <img src="img/gallery-5.png" alt="Imagem de uma galeria">
+                </div>
+                <div class="gallery-items">
+                    <img src="img/gallery-6.png" alt="Imagem de uma galeria">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contate-nos</h2>
+        <div class="section-container">
+            <div class="contact-container">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>852 Campsite Avenue, Wilderness, DG 45435</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@coffeeshopwebsite.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(335) 835-73336
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Segunda - Sexta: 9:00 - 17:00 </p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Sabádo: 10:00 - 15:00 </p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Domingos: Fechado</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.codingnepalweb.com</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="#">
+                        <input type="text" placeholder="Seu Nome" required>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit" class="button form-button">Inscreva-se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-section">
+                <div class="footer-copyright">
+                    <p>© 2024 Coffee Shop</p>
+                </div>
+                <div class="footer-social-media">
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-policies">
+                    <a href="#">Politica de Privacidade</a>
+                    <span>•Política de reembolso</span>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://icons8.com/icon/48258/test-passed">Teste passado</a> ícone por <a
+            href="https://icons8.com">Icons8</a>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
-<footer>
-    <a target="_blank" href="https://icons8.com/icon/48258/test-passed">Teste passado</a> ícone por <a target="_blank" href="https://icons8.com">Icons8</a>
-</footer>
+
 </html>
