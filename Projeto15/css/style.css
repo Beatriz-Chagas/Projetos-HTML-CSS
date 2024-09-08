@@ -1,4 +1,3 @@
-/* Google Fonts Link */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Miniver&display=swap');
 
 * {
@@ -9,7 +8,7 @@
 }
 
 :root {
-  /* Colors */
+  /* Cores */
   --white-color: #fff;
   --dark-color: #252525;
   --primary-color: #3b141c;
@@ -17,25 +16,25 @@
   --light-gray-color: #f2f2f2;
   --medium-gray-color: #ccc;
 
-  /* Font weight */
+  /* Largura de fontes*/
   --font-weight-n: 400;
   --font-weight-m: 500;
   --font-weight-s: 600;
   --font-weight-b: 700;
 
-  /* Font Size */
+  /*Tamanho de fontes*/
   --font-size-s: 1rem;
   --font-size-m: 1.13rem;
   --font-size-l: 1.5rem;
   --font-size-xl: 2.16rem;
   --font-size-xxl: 2.25rem;
 
-  /* Border Radius */
+  /* Borda arrendondadas */
   --border-radius-s: 8px;
   --border-radius-m: 30px;
   --border-radius-circle: 50%;
 
-  /* Site max width */
+  /* largura maxima do site*/
   --site-max-width: 1300px;
 }
 
@@ -47,7 +46,7 @@ body {
   background: var(--white-color);
 }
 
-/* Setting for the whole website */
+/* Configuração para todo o site */
 a {
   text-decoration: none;
 }
@@ -79,7 +78,7 @@ ul {
   border-radius: var(--border-radius-s);
 }
 
-/* Styling for the header section */
+/* Estilo para a seção de cabeçalho */
 .header {
   position: fixed;
   top: 0;
@@ -130,7 +129,7 @@ ul {
   display: none;
 }
 
-/* Hero Section */
+/* Sessão Hero  */
 .hero-section {
   min-height: 100vh;
   background: var(--primary-color);
@@ -211,7 +210,7 @@ ul {
 .hero-container .hero-image-wrapper .hero-image {
   width: 100%;
 }
-/* About Us Section */
+/* Seção Sobre Nós */
 .about-us {
   padding: 100px 20px 120px;
   background: var(--light-gray-color);
@@ -247,7 +246,7 @@ ul {
   text-align: center;
 }
 
-/* Menu Section */
+/* Seção de menu */
 .menu-section {
   background: var(--dark-color);
   color: var(--white-color);
@@ -287,7 +286,7 @@ ul {
   font-size: var(--font-size-m);
 }
 
-/* Testimonial Section */
+/* Seção de depoimentos */
 .testimonial {
   padding: 60px 20px 60px;
   background: var(--light-gray-color);
@@ -349,7 +348,7 @@ ul {
   color: var(--primary-color);
 }
 
-/* Gallery Section */
+/* Seção de galeria*/
 .gallery {
   padding: 60px 20px 120px;
 }
@@ -378,7 +377,7 @@ ul {
   transform: scale(1.3);
 }
 
-/* Contact Section */
+/* Seção de contato */
 .contact {
   padding: 60px 20px 120px;
   background: var(--light-gray-color);
@@ -453,7 +452,7 @@ ul {
   border-color: var(--primary-color);
 }
 
-/* Footer Section */
+/*Seção de rodapé*/
 .footer {
   background: #1b1b1b;
   color: var(--white-color);
@@ -499,7 +498,7 @@ ul {
   font-size: 10px;
 }
 
-/* Responsive Media Query code for max-width: 1024px */
+/*Código de consulta de mídia responsiva para max-width: 1024px */
 @media screen and (max-width: 1024px) {
   body.show-mobile-menu {
     overflow-y: hidden;
@@ -639,7 +638,7 @@ ul {
   }
 }
 
-/* Responsive Media Query code for max-width: 768px */
+/* Código de consulta de mídia responsiva para max-width: 768px */
 @media screen and (max-width: 768px) {
   .slide-wrapper {
     margin: 0 10px 30px;
@@ -650,7 +649,7 @@ ul {
   }
 }
 
-/* Responsive Media Query code for max-width: 576px */
+/*Código de consulta de mídia responsiva para max-width: 576px */
 @media screen and (max-width: 576px) {
   .section-title {
     padding: 32px 0;
